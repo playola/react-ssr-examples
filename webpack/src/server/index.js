@@ -23,4 +23,4 @@ server.get('/', (req, res) => {
 });
 
 server.listen(port);
-console.log(`Server listening on port ${port}. See: http://localhost:${port}.`);
+console.log(`Server listening on port ${port}. See: http://localhost:${port}`);
