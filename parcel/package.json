@@ -1,0 +1,32 @@
+{
+  "name": "parcel-example",
+  "version": "0.0.1",
+  "description": "Parcel example with React SSR",
+  "homepage": "https://github.com/playola/react-ssr-examples/parcel#readme",
+  "author": "playola",
+  "license": "ISC",
+  "scripts": {
+    "start": "run-p watch start-server",
+    "start-server": "nodemon ./build/server/index.js",
+    "watch": "run-p watch-client watch-server",
+    "watch-client": "parcel watch src/client/index.js -d build/client --public-url /build",
+    "watch-server": "parcel watch src/server/index.js -d build/server --public-url /build --target=node",
+    "build": "run-s build-client build-server",
+    "build-client": "parcel build src/client/index.js -d build/client --public-url /build",
+    "build-server": "parcel build src/server/index.js -d build/server --public-url /build --target=node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4"
+  }
+}

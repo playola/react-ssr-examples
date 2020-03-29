@@ -1,0 +1,15 @@
+{
+  "name": "react-ssr-examples",
+  "version": "0.0.1",
+  "description": "React SSR examples with different bundlers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/playola/react-ssr-examples.git"
+  },
+  "author": "playola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/playola/react-ssr-examples/issues"
+  },
+  "homepage": "https://github.com/playola/react-ssr-examples#readme"
+}
